@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--Irene Condado Alcantarilla-->
+<html lang="es">
+    <head>        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lenguaje de Programación</title>
+        <link rel="StyleSheet" type="text/css" href ="css/styles.css" media="all"/> 
+    </head>
+    <body class="container">
+        <header id="header">
+            <img class="logo1" src="img/logo.png" alt="logo"/>
+            <h1 class="cabecera">LENGUAJE DE PROGRAMACIÓN</h1>   
+        </header>
+        <nav id="nav">
+            <!--ENLACES PAGINAS-->
+            <ul id="ul">
+                <li><a href="index.html">INICIO</a></li>
+                <li>|</li>
+                <li><a href="php.html">PHP</a></li>
+                <li>|</li>
+                <li><a href="java.html">JAVA</a></li>
+                <li>|</li>
+                <li><a href="c.html">C</a></li>
+                <li>|</li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <aside id="aside">
+            <ol>
+                <li><a href="https://www.w3schools.com/php/default.asp">Lenguaje PHP</a></li>
+                <li><a href="https://www.w3schools.com/java/default.asp">Lenguaje JAVA</a></li>
+                <li><a href="https://www.w3schools.com/c/index.php">Lenguaje C</a></li>
+            </ol>                
+        </aside>
+        <main id="main">  
+            <section class="contacto_form">
+                <form action="#" id="formulario" name="formulario" method="post">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" placeholder="Nombre">
+                    <br><br>
+                    <label for="phone">Teléfono:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Teléfono">
+                    <br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    <br><br>
+                    <select id="opciones" name="opciones">
+                        <option value="PHP" selected>PHP</option>
+                        <option value="JAVA">JAVA</option>
+                        <option value="C">C</option>
+                        <option Value="Otros">Otros</option>
+                    </select>
+                    <br><br>
+                    <input type="radio" id="si_cliente" name="tipo_cliente" value="si">
+                    <label>Cliente</label>
+                    <input type="radio" id="no_cliente" name="tipo_cliente" value="no" checked>
+                    <label>No cliente</label>
+                    <br><br>
+                    <label for="texto">Mensaje:</label><br>
+                    <textarea id="texto" name="texto"></textarea><br>
+                    <br><br>
+                    <input type="button" name="btn1" id="btn1" value="Enviar" onclick="verdatos()">
+                </form>
+            </section>
+        </main>
+        <footer id="footer">
+            <img class="logo2" src="img/logo.png" alt="logo"/>
+            <p class="footer2">Lenguaje de Programación</p>       
+            <p class="footer3">lenguaje@programación.com</p>
+            <p class="footer4">900 000 000</p>
+            <p class="footer5">Copyright © 2022</p>         
+        </footer>
+        <script type="text/javascript" src="js/javascript.js"></script> 
+    </body>
+</html>

@@ -1,0 +1,293 @@
+@charset "utf-8";
+/*Irene Condado Alcantarilla*/
+/*------------------------------------ Body ------------------------------------------*/
+.container
+{
+    display: grid;
+    width: 95%;
+    height: auto;
+    padding: 0.1em;
+    grid-template-columns:  0.8fr 0.2fr; /*Tamaño de las columnas, se pueden combinar*/
+    grid-template-rows: 150px 60px 1fr 60px;/*Tamaño de las filas, se pueden combinar*/
+    gap: 0.5em; /*Espacio entre los cuadros de nuestro grid*/
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;  
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+/*------------------------------------ HEADER ----------------------------------------*/
+#header
+{
+    grid-row: 1;
+    grid-column: 1/3;
+    width: 98%;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-left: 0.1em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    padding-right: 2em;
+    align-items: center;
+    text-shadow: 0.1em 0.1em 0.2em rgb(143, 141, 141);
+}
+
+.cabecera
+{
+    padding-right: 0.4em;
+}
+
+.logo1
+{
+    width: 5em;
+    margin-right: 0.3em;
+    border: solid 1px;
+    box-shadow: 0 0.2em 0.3em 0 rgb(143, 141, 141);
+}
+
+/*------------------------------------ Navegador --------------------------------------*/
+#nav
+{
+    grid-row: 2;
+    grid-column: 1/3;
+    width: 100%;
+    padding: 0.1em;
+    background-image: url(../img/fondo_blue.jpg);
+    font-weight: bold;
+    font-size: larger;
+    color: rgb(24, 5, 83);
+    text-shadow: 0.1em 0.1em 0.2em rgb(143, 141, 141);
+}
+#nav ul
+{
+    display: flex;
+    list-style: none;
+}
+#nav li
+{
+    padding: 0.2em;
+}
+#nav a
+{
+    text-decoration: none;
+}
+#nav a:link, #nav a:visited, #nav a:active
+{
+    color: rgb(24, 5, 83);
+}
+#nav a:hover
+{
+    color: rgb(23, 178, 199);
+}
+
+/*------------------------------------ Main ------------------------------------------*/
+
+#main
+{
+    grid-row: 3;
+    grid-column: 1/2;
+    background-image: url(../img/fondo_blue.jpg);
+    background-size: cover;
+    width: 100%;
+    padding: 0.1em;
+    text-align: justify;
+}
+.main_title{
+    text-align: center;
+    color: rgb(24, 5, 83);
+    text-shadow: 0.1em 0.1em 0.2em  rgb(143, 141, 141);
+}
+#section1, #section2, #section3, #section4
+{
+    padding: 1em;
+}
+.section1_txt, .section2_txt, .section3_txt, .section4_txt
+{
+    padding: 0.5em;
+    color: rgb(24, 5, 83);
+    background-image: url(../img/fondo-white.png);
+}
+.section4_table, .section4_table th, .section4_table td
+{
+    border: 1px solid;
+}
+.section4_table
+{
+    width: 100%;
+}
+.section4_table th
+{
+    height: 70%;
+}
+.celda
+{
+    background-color: rgb(9, 57, 116);
+    color: white;
+}
+/*-------------------------------------- Aside ----------------------------------------*/
+#aside
+{
+    grid-row: 3;
+    grid-column: 2/3;
+    background-image: url(../img/fondo_blue.jpg);
+    background-size: cover;
+    text-shadow: 0.1em 0.1em 0.2em  rgb(143, 141, 141);
+    padding: 0.5em;
+    font-weight: bold;
+    font-size: medium;
+    color: rgb(24, 5, 83);
+}
+#aside ol
+{
+    list-style: none;
+}
+#aside li
+{
+    margin-top: 0.5em;
+}
+#aside a
+{
+    text-decoration: none;
+}
+
+#aside a:link, #aside a:visited, #aside a:active
+{
+    color: rgb(24, 5, 83);
+}
+#aside a:hover
+{
+    color: rgb(23, 178, 199);
+}
+.audio, .video
+{
+    background-image: url(../img/fondo-white.png);    
+    color: rgb(24, 5, 83);
+    text-align: center;
+    padding: 0.2em;
+}
+.audio audio, .video video
+{
+    width: 70%;
+}
+/*-------------------------------------- footer -----------------------------------------*/
+#footer
+{
+    grid-row: 4;
+    grid-column: 1/3;
+    display: flex;
+    width: 98%;
+    padding: 0.5em;
+    align-items: center;
+    background-image: url(../img/fondo_blue.jpg);
+    font-weight: bold;
+    text-shadow: 0.1em 0.1em 0.1em rgb(143, 141, 141);
+}
+.footer2, .footer3, .footer4, .footer5
+{
+    flex: 1;
+    color: rgb(24, 5, 83);
+    padding: 1em;
+    font-size: small;
+}
+.footer2
+{
+    margin-left: 1em;
+}
+.logo2
+{
+    width: 2em;
+    height: 2em;
+    margin-left: 1em;
+    border: solid 0.1em;
+    box-shadow: 0 0.2em 0.3em 0 rgb(143, 141, 141);
+}
+/*-------------------------------------- PHP, JAVA, C, Contacto --------------------------------------*/
+.php_seccion, .java_seccion, .c_seccion
+{
+    margin: 2em;
+    padding: 1em;
+    background-image: url(../img/fondo-white.png);
+    color: rgb(24, 5, 83);
+}
+
+.php_seccion h2, .java_seccion h2, .c_seccion h2
+{
+    text-align: center;
+}
+
+.contacto_form
+{
+    padding: 1em;
+    color: rgb(24, 5, 83);
+}
+
+/*----------------- Usa media query to añadir un punto de ruptura ----------------------*/
+
+/*Dispositivos medios (tablets apaisadas, 768px y más)*/
+@media screen and (max-width: 768px) 
+{
+    .container
+    {
+        width: 95%;
+    }
+    #nav
+    {
+        max-width:95%;
+        font-size: small;
+    }
+    #aside
+    {
+        /*visibility: hidden;*/
+        display: none;
+    }
+    #main
+    {
+        max-width: 95%;
+        grid-column: 1/3;
+
+    }
+    #footer
+    {
+        max-width:94%;
+        font-size: small;
+    }
+    .footer3
+    {
+        display: none;        
+    }    
+}
+
+/*Dispositivos pequeños (portrait tablets and large phones, 600px y más)*/
+@media screen and (max-width: 600px) 
+{
+    .container
+    {
+        max-width:95%;
+    }
+    #nav
+    {
+        max-width:95%;
+        font-size: small;
+    }
+    #aside
+    {
+        /*visibility: hidden;*/
+        display: none;
+    }
+    #main
+    {
+        max-width:95%;
+        grid-column: 1/3;
+        font-size: small;
+
+    }
+    #footer
+    {
+        max-width:94%;
+        font-size:x-small;
+    }
+    .footer3
+    {
+        display: none;        
+    }
+}
